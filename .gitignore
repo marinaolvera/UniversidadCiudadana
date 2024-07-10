@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Programacion/Tetra1/CSharpProjects/Marina_Olvera/.vs
+/Programacion/Tetra1/CSharpProjects/Marina_Olvera/bin/Debug/net8.0
+/Programacion/Tetra1/CSharpProjects/Marina_Olvera/obj
