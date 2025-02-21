@@ -1,0 +1,24 @@
+@MarinaOlvera_HostAddress = http://localhost:5076
+
+
+GET {{MarinaOlvera_HostAddress}}/api/Estudiante
+Accept: application/json
+
+###
+
+POST {{MarinaOlvera_HostAddress}}/api/Estudiante/Crear
+Accept: application/json
+Content-Type: application/json
+{
+  "email": "jorge.olvera@outlook.com",
+  "edad": 0,
+  "escuela": "Universidad Ciudadana",
+  "nombre": "jorge",
+  "apellido": "Olvera"
+}
+
+###
+POST {{MarinaOlvera_HostAddress}}/api/Estudiante/BuscarByEmail?email=masrina.olvera@outlook.com
+Accept: text/plain
+Content-Type: application/json
+###
