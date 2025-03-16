@@ -4,7 +4,7 @@ using System.Text.Json;
 
 namespace MarinaOlvera.Repository
 {
-    public class EstudianteRepository : IEstudianteRepository
+    public class EstudianteRepository : IEstudiantesRepository
     {
         /***************
          * Generamos una Lista de Objetos Estudiantes para cargar el archivo JSON
@@ -33,9 +33,9 @@ namespace MarinaOlvera.Repository
         /********************************************************
          ***************Logica del codigo************************
          ********************************************************/
-        public void Crear(Estudiante estudiante)
+        public void Crear(Estudiante obj)
         {
-            estudiantes.Add(estudiante);
+            estudiantes.Add(obj);
             GuardarEnJson();
         }
         public Estudiante BuscarByEmail(string email)

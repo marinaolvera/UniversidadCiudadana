@@ -36,7 +36,7 @@ namespace MarinaOlvera.Controllers
             var existe = _repository.BuscarByEmail(request.Email);
             if (existe != null)
             {
-                return BadRequest(new { message = "El Usuario ya existe." });
+                return BadRequest(new { message = "El Estudiante ya existe." });
             }
             _repository.Crear(request);
             return Ok(new { message = "Registro creado." });
